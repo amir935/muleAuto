@@ -15,10 +15,7 @@
 
 		<app.runtime>4.8.1</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
-		<environment>Sandbox</environment>
-		<targetName>Cloudhub-US-East-2</targetName>
-		<appName>mule-auto1</appName>
-		<mule.env>dev</mule.env>
+		
 	</properties>
 
 	<build>
