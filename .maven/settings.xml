@@ -10,7 +10,11 @@
       <password>784a7e7c95734c878f35d4a676112d45~?~0c02C961B52B498E8F63B415ef557a7d</password>
     </server>
    
- <profiles>
+ 
+    
+  </servers>
+
+  <profiles>
     <profile>
       <id>mule-dev</id>
       <activation>
@@ -30,8 +34,6 @@
       </repositories>
     </profile>
   </profiles>
-    
-  </servers>
 
 
 </settings>
