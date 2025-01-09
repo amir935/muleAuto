@@ -14,26 +14,7 @@
     
   </servers>
 
-  <profiles>
-    <profile>
-      <id>mule-dev</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <repositories>
-        <repository>
-          <id>anypoint-exchange-v3</id>
-          <name>Anypoint Exchange</name>
-          <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
-        </repository>
-        <repository>
-          <id>mulesoft-releases</id>
-          <name>MuleSoft Releases Repository</name>
-          <url>https://repository.mulesoft.org/releases/</url>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
+  
 
 
 </settings>
