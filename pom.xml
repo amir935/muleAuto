@@ -57,8 +57,14 @@
 							<http.port>8081</http.port>
 							<mule.env>${mule.env}</mule.env>
 						</properties>
+						
+						 <deploymentSettings>
+                            <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+                        </deploymentSettings>
 					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
+					
+					
 				</configuration>
 				
 			</plugin>
