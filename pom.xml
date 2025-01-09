@@ -25,7 +25,7 @@
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 		
 	</properties>
->>>>>>> d13951fbe2c7d11b1862a02e32b747dc51107cff
+
 
  <build>
   <plugins>
