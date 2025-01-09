@@ -4,7 +4,7 @@
 
 	<groupId>930dd45f-b91b-4fe9-9790-40176932f84d</groupId>
 	<artifactId>mule-auto1</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-auto1</name>
@@ -15,10 +15,7 @@
 
 		<app.runtime>4.8.1</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
-		<environment>Sandbox</environment>
-		<targetName>Cloudhub-US-East-2</targetName>
-		<appName>mule-auto1</appName>
-		<mule.env>dev</mule.env>
+		
 	</properties>
 
 	<build>
@@ -57,7 +54,14 @@
 		
 	</build>
 
-
+<distributionManagement>
+    <repository>
+      <id>Repository</id>
+      <name>Corporate Repository</name>
+      <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/930dd45f-b91b-4fe9-9790-40176932f84d/maven</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
@@ -109,16 +113,5 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
-
-	<distributionManagement>
-		<repository>
-			<id>Repository</id>
-			<name>Corporate Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
-
 
 </project>
