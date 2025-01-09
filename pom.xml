@@ -16,9 +16,16 @@
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+<<<<<<< HEAD
   <app.runtime>4.8.1</app.runtime>
   <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
  </properties>
+=======
+		<app.runtime>4.8.1</app.runtime>
+		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+		
+	</properties>
+>>>>>>> d13951fbe2c7d11b1862a02e32b747dc51107cff
 
  <build>
   <plugins>
