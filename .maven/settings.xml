@@ -1,0 +1,18 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <servers>
+    <!-- Match the IDs with distributionManagement and repositories in pom.xml -->
+    <server>
+      <id>anypoint-exchange-v3</id>
+      <username>~~~client~~~</username>
+      <password>0793590c6a47494ea34a13e48d314484~?~cfA4C73BD629488aA39BE0C91bAD29A6</password>
+    </server>
+   
+
+    
+  </servers>
+
+
+</settings>
