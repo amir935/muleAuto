@@ -34,41 +34,27 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<classifier>mule-application</classifier>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<environment>${environment}</environment>
-						<target>${targetName}</target>
-						<muleVersion>${app.runtime}</muleVersion>
-						<connectedAppClientId>784a7e7c95734c878f35d4a676112d45</connectedAppClientId>
-						<connectedAppClientSecret>0c02C961B52B498E8F63B415ef557a7d</connectedAppClientSecret>
-						<ConnectedAppGrantType>client_credentials</ConnectedAppGrantType>
-						<applicationName>${appName}</applicationName>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-2</target>
+						<server>Repository</server>
+						<applicationName>${project.artifactId}</applicationName>
+						<releaseChannel>Edge</releaseChannel>
+						<muleVersion>4.8.1</muleVersion>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
-							<http>
-								<inbound>
-									<lastMileSecurity>false</lastMileSecurity>
-								</inbound>
-							</http>
+							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 						</deploymentSettings>
-						<properties>
-							<http.port>8081</http.port>
-							<mule.env>${mule.env}</mule.env>
-						</properties>
-						
-						 <deploymentSettings>
-                            <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-                        </deploymentSettings>
 					</cloudhub2Deployment>
-					<classifier>mule-application</classifier>
-					
-					
 				</configuration>
-				
 			</plugin>
 		</plugins>
+
+		
 	</build>
 
 <distributionManagement>
@@ -114,7 +100,7 @@
         <repository>
             <id>Repository</id>
             <name>Private Exchange Repository</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/930dd45f-b91b-4fe9-9790-40176932f84d/maven</url>
             <layout>default</layout>
         </repository>
 	</repositories>

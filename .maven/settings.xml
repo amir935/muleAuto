@@ -1,20 +1,16 @@
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+<?xml version="1.0"?>
+<settings>
+
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
 
   <servers>
-    <!-- Match the IDs with distributionManagement and repositories in pom.xml -->
     <server>
-      <id>anypoint-exchange-v3</id>
-      <username>~~~client~~~</username>
-      <password>784a7e7c95734c878f35d4a676112d45~?~0c02C961B52B498E8F63B415ef557a7d</password>
+      <id>Repository</id>
+      <username>Client</username>
+      <password>${client.id}?${client.secret}</password>
     </server>
-   
- 
-    
   </servers>
-
-  
-
 
 </settings>
