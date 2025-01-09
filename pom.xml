@@ -4,7 +4,7 @@
 
 	<groupId>930dd45f-b91b-4fe9-9790-40176932f84d</groupId>
 	<artifactId>mule-auto1</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-auto1</name>
