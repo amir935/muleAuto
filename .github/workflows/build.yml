@@ -49,13 +49,13 @@ jobs:
 
         run: | 
 
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests   -Dclient.id="0793590c6a47494ea34a13e48d314484"  -Dclient.secret="cfA4C73BD629488aA39BE0C91bAD29A6" 
+          mvn deploy  -DskipMunitTests   
 
       - name: Deploy to CloudHub 2.0 
 
         run: | 
 
-          mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy  -Dclient.id="0793590c6a47494ea34a13e48d314484"  -Dclient.secret="cfA4C73BD629488aA39BE0C91bAD29A6"
+          mvn deploy  -DskipMunitTests -DmuleDeploy 
          
 
    
