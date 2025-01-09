@@ -39,8 +39,12 @@ jobs:
 
           distribution: "zulu" 
 
-          java-version: 17 
+          java-version: 17
+      - name: Build Application 
 
+        run: | 
+          mvn   clean package
+          
       - name: Publish to Exchange 
 
         run: | 
