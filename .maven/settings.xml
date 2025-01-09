@@ -7,10 +7,29 @@
     <server>
       <id>anypoint-exchange-v3</id>
       <username>~~~client~~~</username>
-      <password>0793590c6a47494ea34a13e48d314484~?~cfA4C73BD629488aA39BE0C91bAD29A6</password>
+      <password>784a7e7c95734c878f35d4a676112d45~?~0c02C961B52B498E8F63B415ef557a7d</password>
     </server>
    
-
+ <profiles>
+    <profile>
+      <id>mule-dev</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>anypoint-exchange-v3</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+        </repository>
+        <repository>
+          <id>mulesoft-releases</id>
+          <name>MuleSoft Releases Repository</name>
+          <url>https://repository.mulesoft.org/releases/</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
     
   </servers>
 
